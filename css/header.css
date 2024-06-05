@@ -1,0 +1,96 @@
+/*重置浏览器默认样式*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*导航栏*/
+#header{
+	position: relative;   
+    width: 100%; 
+	height: 234px;
+    z-index: 1000;
+}
+/*导航条*/
+#header .center{
+    position: absolute;
+    top: 70px;
+    margin-left: 12.5%;
+    width: 1142px;
+    height: 75px;
+    background-image: url(../image/nav_bg.png);
+    background-size: 100% 100%;
+}
+/*导航栏中间logo*/
+#header .logo{
+    position: absolute;
+    margin-top: -66px;
+    margin-left: 405px;
+    width: 360px;
+}
+/*链接列表*/
+#header .link{
+    position: absolute;
+    top: -15px;
+    height: 136px;
+    list-style: none;
+}
+/*列表项*/
+#header .link li{
+    width: 65px;
+    height: 136px;
+    line-height: 65px;
+    float: left;
+}
+/*链接*/
+#header .link a{
+    display: block;
+	text-decoration:none;
+	color:#ffffff;
+	width:100%;
+	height:100%;
+	transition:all 0.3s;
+}
+/*首页链接*/
+#header .link .link_index{
+    margin-left: 90px;
+    background:  url(../image/tab_img1_rp1.png);
+    background-size: 100% 100%;
+    text-indent: -9999px;
+}
+#header .link .link_index:hover{
+    background:  url(../image/tab_img1_hov.png);
+    background-size: 100% 100%;
+}
+/*资料库*/
+#header .link .link_data{
+    margin-left: 15px;
+    background:  url(../image/tab_img2_rp1.png);
+    background-size: 100% 100%;
+    text-indent: -9999px;
+}
+#header .link .link_data:hover{
+    background:  url(../image/tab_img2_hov.png);
+    background-size: 100% 100%;
+}
+/*世界观*/
+#header .link .link_world{
+    margin-left: 15px;
+    background:  url(../image/tab_img3_rp1.png);
+    background-size: 100% 100%;
+    text-indent: -9999px;
+}
+#header .link .link_world:hover{
+    background:  url(../image/tab_img3_hov.png);
+    background-size: 100% 100%;
+}
+/*登录*/
+#header .link .link_login{
+    margin-left: 550px;
+    margin-top: 15px;
+    width: 161px;
+    height: 65px;
+    background:  url(../image/tab_img5_rp1.png);
+    background-size: 100% 100%;
+    text-indent: -9999px;
+}

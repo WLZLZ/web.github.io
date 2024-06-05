@@ -1,0 +1,164 @@
+/*资料库内容*/
+#data_contain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1280px;
+    height: 1800px;
+    background: url(../image/repeat_bg.jpg);
+    background-size: cover;
+}
+
+
+/*出场人物介绍*/
+#data_contain .illu_box1{
+    margin-top: 180px;
+    width: 100%;
+    height: 650px;
+}
+#data_contain .illu_contain1{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 11%;
+    width: 1192px;
+    height: 530px;
+    background-image: url(../image/info_container_main_bg_rp1.png);
+    background-size: 100% 100%;
+}
+/*背景人物*/
+#data_contain .bg_peop{
+    position: absolute;
+    margin-top: -50px;
+    width: 420px;
+    height: 600px;
+}
+/*标题*/
+#data_contain .bg_title{
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 400px;
+    width: 380px;
+    height: 138px;
+    z-index: 99;
+}
+/*文本信息*/
+#data_contain .illu_info1{
+    position: relative;
+    top: 50px;
+    left: 420px;
+    width: 740px;
+    height: 400px;
+    overflow: hidden;
+}
+/*列表*/
+#data_contain .illu_text1{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 740px;
+    height: 400px;
+    list-style: none;
+}
+/*列表项样式*/
+#data_contain .illu_text1 li{
+    position: relative;
+    width: 250px;
+    height: 100px;
+    float: left;
+    transition: 0.3s;
+    margin-right: 110px;
+    margin-bottom: 30px;
+}
+#data_contain .illu_text1 .picture{
+    position: absolute;
+}
+#data_contain .illu_text1 .name{
+    position: relative;
+    left: 110px;
+    font-size: x-large;
+}
+#data_contain .illu_text1 .in_text{
+    position: relative;
+    left: 110px;
+}
+/*页码样式*/
+#data_contain .page_bottom{
+    position: absolute;
+    right: 30px;
+    bottom: -50px;
+    width: 150px;
+    height: 40px;
+}
+#data_contain .page_bottom ul{
+    float: left;
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+#data_contain .page_bottom li{
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    background-color: #8b7849;
+    border: 2px solid #e3ce9c;
+    border-radius: 20%;
+    color: #e3ce9c;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*魔物图鉴*/
+#data_contain .illu_box2{
+    margin-top: 110px;
+    width: 100%;
+    height: 750px;
+}
+#data_contain .illu_contain2{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 11%;
+    width: 1200px;
+    height: 670px;
+    background-image: url(../image/info_container_main_bg_rp1.png);
+    background-size: 100% 100%;
+}
+/*表格*/
+#data_contain .illu_info2{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 1100px;
+    height: 600px;
+}
+#data_contain .illu_info2 table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+#data_contain .illu_info2 th{
+    border: 1px solid black;
+    height: 40px;
+}
+#data_contain .illu_info2 td{
+    border: 1px solid black;
+    height: 79.2px;
+    text-align: center;
+}
+#data_contain .illu_info2 tr:hover {background-color: #523e1a6d;}
+#data_contain .illu_info2 td img{
+    max-height: 75px;
+    width: auto;
+    height: auto;
+}
+
+/*底部*/
+#data_contain .bottom{
+    width: 100%;
+    min-width: 1280px;
+    height: 200px;
+    background-image: url(../image/history_box_bg1_rp1.png);
+    background-size: 100% 100%;
+}

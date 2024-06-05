@@ -1,0 +1,36 @@
+.login_contain h1{
+    margin-left: 25px;
+    color: #331f05;
+}
+#form p{
+    color: #331f05;
+    font-weight: bold;
+    line-height: 30px;
+}
+#form input[type="text"],  
+#form input[type="password"] {  
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #331f05;
+} 
+#form input[type="text"],  
+#form input[type="password"]:focus{
+    outline: none; /* 移除聚焦时的默认轮廓 */  
+}
+#reg_btn{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 10px;  
+    background-color: #d1bd8e;  
+    border: 2px solid #331f05; 
+    border-radius: 10%;
+    color: #331f05;  
+    font-weight: bold;
+    font-size: medium;
+}
+.link_login{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}

@@ -1,0 +1,623 @@
+/*首页内容区域*/
+#index_container{
+    position: absolute;  
+    top: 0;  
+    left: 0;
+    width: 100%;
+    min-width: 1280px;
+    height: 3000px;
+    background: url(../image/repeat_bg.jpg);
+    background-size: cover;
+}
+
+/*右侧列表*/
+#index_container .right_icon{
+    position: fixed;
+    top: 0px;
+    right: 50px;
+    width: 120px;
+    height: 420px;
+    background: url(../image/Rope.png) no-repeat;
+    list-style: none;
+    z-index: 1001;
+}
+#index_container .right_icon li{
+    width: 150px;
+    height: 65px;
+}
+#index_container .right_icon a{
+    display: block;
+    width:100%;
+	height:100%;
+}
+/*IOS下载*/
+#index_container .right_icon .icon_ios{
+    margin-top: 120px;
+    text-indent: -9999px;
+    width: 150px;
+    height: 65px;
+    background: url(../image/ios_btn_rp1.png);
+    background-size: 100% 100%;
+}
+/*Android下载*/
+#index_container .right_icon .icon_android{
+    text-indent: -9999px;
+    width: 150px;
+    height: 65px;
+    background: url(../image/android_btn_rp1.png);
+    background-size: 100% 100%;
+}
+/*TapTap下载*/
+#index_container .right_icon .icon_taptap{
+    text-indent: -9999px;
+    width: 150px;
+    height: 65px;
+    background: url(../image/tap_btn_rp1.png);
+    background-size: 100% 100%;
+}
+
+/*左侧列表*/
+#index_container .left_icon{
+    position: fixed;
+    top: 400px;
+    left: 12px;
+    width: 150px;
+    height: 320px;
+    background: url(../image/right_icon_bg_rp1.png) no-repeat;
+    list-style: none;
+    z-index: 999;
+    display: inline-block;
+}
+#index_container .left_icon a{
+    display: block;
+    width:100%;
+	height:100%;
+}
+#index_container .left_icon span{
+    display: block;
+    width:100%;
+	height:100%;
+}
+/*微博链接*/
+#index_container .left_icon .icon_weibo{
+    text-indent: -9999px;
+    margin-top: 130px;
+    margin-left: 35px;
+    width: 70px;
+    height: 36px;
+    background: url(../image/right_icon_wb.png);
+    background-size: 100% 100%;
+}
+/*微信二维码*/
+#index_container .left_icon .icon_weixin{
+    text-indent: -9999px;
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 70px;
+    height: 36px;
+    background: url(../image/right_icon_wx.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+#index_container .left_icon .wechat_img{
+    position: absolute;
+    top: 120px;
+    left: 90%;
+    width: 150px;
+    height: 150px;
+    display: none;
+}
+#index_container .left_icon .icon_weixin:hover ~ .wechat_img{
+    display: block;
+}
+/*官方Q群*/
+#index_container .left_icon .icon_qq{
+    text-indent: -9999px;
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 70px;
+    height: 42px;
+    background: url(../image/right_icon_qq.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+#index_container .left_icon .qq_qun{
+    position: absolute;
+    top: 120px;
+    left: 90%;
+    width: 150px;
+    height: 140px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: smaller;
+    background-color: #fff;
+    display: none;
+}
+#index_container .left_icon .icon_qq:hover ~ .qq_qun{
+    display: block;
+}
+
+
+
+
+/*内容区域*/
+#index_container .info_contain{
+    width: 100%;
+    height: 920px;
+    background-image: url(../image/data_box_bg_re_rp\(1\).png);
+    background-size: cover;
+}
+#index_container .info_box{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 170px;
+    width: 1165px;
+    height: 693px;
+    background: url(../image/info_box_bg2.png);
+    background-size: cover;
+}
+
+/*左侧选项卡*/
+#index_container .info_news{
+    position: relative;
+    top: 72px;
+    left: 150px;
+    width: 370px;
+    height: 410px;
+    overflow: hidden;
+}
+/*顶部选项*/
+/*移动标志*/
+#index_container .chicken{
+    position: absolute;
+    width: 58px;
+    height: auto;
+    transition: top 0.5s ease;
+}
+#index_container .chicken1{
+    position: absolute;
+    width: 58px;
+    height: auto;
+    transition: top 0.5s ease;
+    display: none;
+}
+#index_container .info_news input{
+    display: none;
+}
+#index_container .info_news label{
+    position: relative;
+    top: 62px;
+    width: 82px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    cursor: pointer;
+    float: left;
+}
+/*最新*/
+#index_container .info_news .news1{
+    text-indent: -9999px;
+    background-image: url(../image/up_to_date.png);
+}
+/*设置悬停/点击后移动标志的移动*/
+#index_container .info_news .news1:hover ~.chicken{
+    display: none;
+}
+#index_container .info_news .news1:hover ~.chicken1{
+    display: block;
+    left: 10px;
+}
+#index_container .info_news input[id=ck1]:checked ~ .chicken{
+    left: 10px;
+}
+/*新闻*/
+#index_container .info_news .news2{
+    text-indent: -9999px;
+    background-image: url(../image/news.png);
+}
+#index_container .info_news .news2:hover ~.chicken{
+    display: none;
+}
+#index_container .info_news .news2:hover ~.chicken1{
+    display: block;
+    left: 92px;
+}
+#index_container .info_news input[id=ck2]:checked ~ .chicken{
+    left: 92px;
+}
+/*活动*/
+#index_container .info_news .news3{
+    text-indent: -9999px;
+    background-image: url(../image/activity.png);
+}
+#index_container .info_news .news3:hover ~.chicken{
+    display: none;
+}
+#index_container .info_news .news3:hover ~.chicken1{
+    display: block;
+    left: 174px;
+}
+#index_container .info_news input[id=ck3]:checked ~ .chicken{
+    left: 174px;
+}
+/*公告*/
+#index_container .info_news .news4{
+    text-indent: -9999px;
+    background-image: url(../image/notice.png);
+}
+#index_container .info_news .news4:hover ~.chicken{
+    display: none;
+}
+#index_container .info_news .news4:hover ~.chicken1{
+    display: block;
+    left: 256px;
+}
+#index_container .info_news input[id=ck4]:checked ~ .chicken{
+    left: 256px;
+}
+/*文字内容*/
+#index_container .news_contain{
+    position: relative;
+    top: 128px;
+    left: 10px;
+    width: 1480px;
+    height: 230px;
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    transition: 0.3s;
+}
+#index_container .news_contain li{
+    width: 370px;
+    height: 230px;
+    line-height: 46px;
+    float: left;
+    list-style: none;
+}
+/*设置点击后显示不同内容*/
+#index_container .info_news input[id=ck1]:checked ~ .news_contain{
+    transform: translate(calc(0 * 370px));
+}
+#index_container .info_news input[id=ck2]:checked ~ .news_contain{
+    transform: translate(calc(-1 * 370px));
+}
+#index_container .info_news input[id=ck3]:checked ~ .news_contain{
+    transform: translate(calc(-2 * 370px));
+}
+#index_container .info_news input[id=ck4]:checked ~ .news_contain{
+    transform: translate(calc(-3 * 370px));
+}
+
+/*右侧轮播图片*/
+#index_container .show_image{
+    position: relative;
+    top: -240px;
+    left: 560px;
+    width: 500px;
+    height: 305px;
+    box-sizing: border-box;
+    border: .1rem solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/*图片列表*/
+#index_container .show_image .slides{
+    position: relative;
+    width: 2000px;
+    height: inherit;
+    display: flex;
+    list-style: none;
+    animation: move 10s ease 1s infinite;
+}
+/*动画效果*/
+@keyframes move{
+    0% {
+        transform: translate(calc(0 * 500px));
+    }
+    33% {
+        transform: translate(calc(-1 * 500px));
+    }
+    66% {
+        transform: translate(calc(-2 * 500px));
+    }
+    100% {
+        transform: translate(calc(-3 * 500px));
+    }
+    
+}
+/*列表项*/
+#index_container .show_image .slides li{
+    width: 500px;
+    height: inherit;
+}
+/*轮播图片设置*/
+#index_container .show_image .slides .slide1{
+    background-image: url(../image/image0.jpg);
+    background-size: contain;
+}
+#index_container .show_image .slides .slide2{
+    background-image: url(../image/image1.jpg);
+    background-size: contain;
+}
+#index_container .show_image .slides .slide3{
+    background-image: url(../image/image2.jpg);
+    background-size: contain;
+}
+#index_container .show_image:hover .slides{
+    animation: none;
+}
+/*原点切换*/
+#index_container .show_image input{
+    display: none;
+}
+#index_container .show_image:hover {
+    cursor: pointer;
+}
+#index_container .show_image .labels{
+    position: absolute;
+    bottom: .5rem;
+    z-index: 1;
+    width: inherit;
+    justify-content: center;
+    display: none;
+}
+#index_container .show_image:hover .labels{
+    display: flex;
+}
+#index_container .show_image .labels label{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    margin: 0 .3rem;
+    border: .1rem solid #fff;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#index_container .show_image input[id=pic1]:checked ~ .labels label[for=pic1],
+#index_container .show_image input[id=pic2]:checked ~ .labels label[for=pic2],
+#index_container .show_image input[id=pic3]:checked ~ .labels label[for=pic3] {
+  background-color: #fff;
+  border: .1rem solid #fff;
+}
+#index_container .show_image input[id=pic1]:checked ~ .slides{
+    transform: translate(calc(0 * 500px));
+}
+#index_container .show_image input[id=pic2]:checked ~ .slides{
+    transform: translate(calc(-1 * 500px));
+}
+#index_container .show_image input[id=pic3]:checked ~ .slides{
+    transform: translate(calc(-2 * 500px));
+}
+
+/*资料库*/
+#index_container .data_box{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: 970px;
+    background-image: url(../image/data_box_bg_re_rp3.png);
+    background-size: 100% 100%;
+}
+#index_container .data_common{
+    position: relative;
+    margin: 0% auto;
+    width: 100%;
+    height: 970px;
+    transition: 0.3s;
+}
+/*标题*/
+#index_container .box_title{
+    position: absolute;
+}
+#index_container .box_bg{
+    position: absolute;
+    top: 30px;
+    left: 280px;
+}
+/*出场人物*/
+#index_container .data_box1{
+    position: absolute;
+    top: 270px;
+    left: 210px;
+    width: 463px;
+    height: 585px;
+    z-index: 30;
+    background-image: url(../image/data_box1_bg.png);
+    background-size: contain;
+}
+#index_container .data_box1:hover{
+    transform: scale(1.1);
+    z-index: 32;
+}
+/*魔物图鉴*/
+#index_container .data_box2{
+    position: absolute;
+    top: 220px;
+    left: 510px;
+    width: 504px;
+    height: 671px;
+    z-index: 31;
+    background-image: url(../image/data_box2_bg.png);
+    background-size: contain;
+}
+#index_container .data_box2:hover{
+    transform: scale(1.1);
+}
+/*装备图鉴*/
+#index_container .data_box3{
+    position: absolute;
+    top: 150px;
+    left: 740px;
+    width: 546px;
+    height: 676px;
+    z-index: 30px;
+    background-image: url(../image/data_box3_bg.png);
+    background-size: contain;
+}
+#index_container .data_box3:hover{
+    z-index: 32;
+    transform: scale(1.1);
+}
+
+/*世界观*/
+#index_container .introduce{
+    position: relative;
+    margin-top: 140px;
+}
+#index_container .history_box{
+    margin: 40px auto;
+    width: 1020px;
+    height: 360px;
+    transition: 0.3s;
+    list-style: none;
+    overflow: hidden;
+}
+#index_container .history_box li{
+    position: relative;
+    margin-left: 25px;
+    width: 230px;
+    height: 360px;
+    float: left;
+    transition: 0.3s;
+    overflow: hidden;
+}
+/*年代时间线*/
+#index_container .history_box1{
+    position: absolute;
+    width: 234px;
+    height: 360px;
+    z-index: 11;
+}
+#index_container .text_box1{
+    position: absolute;
+    margin-left: 200px;
+    width: 680px;
+    height: 360px;
+    z-index: 10;
+}
+#index_container .history_text1{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 240px;
+    width: 620px;
+    height: 360px;
+    z-index: 11;
+    font-size: smaller;
+}
+/*人类历史*/
+#index_container .history_box2{
+    position: absolute;
+    width: 234px;
+    height: 360px;
+    z-index: 21;
+}
+#index_container .text_box2{
+    position: absolute;
+    margin-left: 200px;
+    width: 680px;
+    height: 360px;
+    z-index: 19;
+}
+#index_container .history_text2{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 240px;
+    width: 620px;
+    height: 360px;
+    z-index: 20;
+    font-size: smaller;
+}
+/*阵营设定*/
+#index_container .history_box3{
+    position: absolute;
+    width: 234px;
+    height: 360px;
+    z-index: 31;
+}
+#index_container .text_box3{
+    position: absolute;
+    margin-left: 200px;
+    width: 680px;
+    height: 360px;
+    z-index: 29;
+}
+#index_container .history_text3{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 240px;
+    width: 620px;
+    height: 360px;
+    z-index: 30;
+    font-size: smaller;
+}
+/*牧羊人词典*/
+#index_container .history_box4{
+    position: absolute;
+    width: 234px;
+    height: 360px;
+    z-index: 41;
+}
+#index_container .text_box4{
+    position: absolute;
+    margin-left: 200px;
+    width: 680px;
+    height: 360px;
+    z-index: 39;
+}
+#index_container .history_text4{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 240px;
+    width: 620px;
+    height: 360px;
+    z-index: 40;
+    font-size: smaller;
+}
+/*设置鼠标悬停显示文本*/
+#index_container .history_box:hover li{
+    width: 50px;
+    margin-left: 0px;
+    overflow: visible;
+}
+#index_container .history_box li:hover{
+    width: 870px;
+}
+
+
+/*底部区域*/
+#index_container .bottom{
+    position: relative;
+    width: 100%;
+    height: 735px;
+    background-image: url(../image/bg_city_rp2.png);
+    overflow: hidden;
+
+}
+#index_container .bottom_main{
+    position: absolute;
+    margin-top: 135px;
+    width: 100%;
+    height: 600px;
+}
+#index_container .bottom_main .character{
+    position: absolute;
+    top: -100px;
+    left: 110px;
+}
+#index_container .bottom_main .banister1{
+    position: absolute;
+    top: 210px;
+    left: 720px;
+}
+#index_container .bottom_main .banister2{
+    position: absolute;
+    top: 155px;
+    left: 1000px;
+}
+#index_container .bottom_main .banister{
+    position: absolute;
+    width: 1519px;
+    top: 455px;
+    z-index: 99;
+}

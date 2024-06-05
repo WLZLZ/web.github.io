@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#login_box{
+    position: absolute;
+    width: 100%;
+    min-width: 1280px;
+    height: 754px;
+    background-image: url(../image/activity-pc-bg.a7a5c7d.jpg);
+    background-size: 100% 100%;
+}
+#login_box .img_1{
+    position: absolute;
+    bottom: 0;
+}
+#login_box .img_2{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+#login_box .login_contain{
+    position: relative;
+    margin-top: 180px;
+    margin-left: 500px;
+    padding-top: 40px;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    background-image: url(../image/info_container_main_bg_rp1.png);
+    background-size: 100% 100%;
+}
+#login_box .img_3{
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+
